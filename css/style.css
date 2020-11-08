@@ -1,3 +1,185 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.left{
+	width: 15%;
+	height: auto;
+	float: left;
+	background-color: #0C1427;
+}
+
+.left h2{
+	color: white;
+	font-weight: 500;
+	margin-top: 12px;
+	font-size: 25px;
+} 
+.left h2 span{
+	color:#727CF5;
+}
+.left hr{
+	background-color: #727CF5;
+	height: 1px;
+	opacity: .4;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+.left img{
+	margin:10px 0px;
+}
+.left ul{
+	padding: 0px 15px;
+}
+.left ul li{
+	color: white;
+	font-size:14px; 
+	cursor: pointer;
+	padding: 5px 0px;
+}
+.left ul li.mydesign{
+	color: #727CF5;
+	font-size:13px; 
+	margin-top: 10px;
+	cursor: default;
+}
+.left ul li i{
+	font-size:11px;
+	margin-right: 2px; 
+}
+.left ul li a{
+	text-decoration: none;
+	display: block;
+	color: white;
+	font-size: 14px;
+}
+
+.mydeopdown{
+	display: none;
+}
+
+.left ul.mydeopdown{
+	background-color: white;
+	margin-top: 4px;
+	padding: 0px 15px;
+	border-radius: 5px;
+}
+.left ul.mydeopdown li{
+	margin: 0px;
+	padding: 0px;
+}
+.left ul.mydeopdown li a{
+	margin: 0px;
+	padding: 4px 4px;
+	color: #727CF5;
+}
+.right{
+	width: 85%;
+	height: auto;
+	float: left;
+	background-color: #F7F8FA;
+	padding-bottom: 20px;
+}
+
+.right .top_bar{
+	background-color: white;
+	box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.23);
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	padding: 10px 0px;
+}
+
+.right .top_bar .myham{
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.right .top_bar ul{
+	float: right;
+}
+.right .top_bar ul li{
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.right .top_bar ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+}
+.right .top_bar ul li  ul{
+	position: absolute;
+	background-color: white;
+	width: 100px;
+	box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.23);
+	padding-bottom: 5px;
+	visibility: hidden;
+	opacity: 0;
+}
+.right .top_bar ul li:hover  ul{
+	visibility: visible;
+	opacity: 1;
+}
+.right .top_bar ul li  ul li{
+	width: 100%;
+}
+.right .top_bar ul li ul li a{
+	display: block;
+	padding: 3px 0px;
+
+}
+
+#menu_control:checked ~ .left{
+	width: 5%;
+}
+#menu_control:checked ~ .right{
+	width: 95%;
+}
+
+#menu_control:checked ~ .left ul li a span {
+		display: none;
+}
+
+#menu_control:checked ~  .left h2 {
+		display: none;
+}
+
+#menu_control:checked ~   .left img {
+		display: none;
+}
+
+#menu_control:checked ~   .left .mydesign {
+		display: none;
+}
+
+#menu_control:checked ~ .left .clickdorp span {
+		display: none;
+}
+
+#menu_control:checked ~ .left ul li .mydeopdown span {
+		display: none;
+		visibility: hidden;
+}
+#menu_control:checked ~ .left ul li i{
+	font-size: 15px;
+	padding: 10px 0px;
+}
+#menu_control:checked ~ .left ul li .fa-chevron-down{
+	font-size: 8px;
+	padding: 0px;
+}
+
+
 
 

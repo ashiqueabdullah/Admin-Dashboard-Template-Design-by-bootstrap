@@ -1,14 +1,53 @@
 
 /* if the viewport is equal to 340px or less than that */ 
 @media only screen and (max-width: 340px){
-    
 
 }
 
 
 /* if the viewport is equal to 340px or less than that */ 
 @media only screen and (max-width: 792px){
-   
+	.left{
+		width: 10%;
+	}
+	.right{
+		width: 90%;
+	}
+ 	.left ul li a span {
+		display: none;
+	}
+
+	.left h2 {
+			display: none;
+	}
+
+	.left img {
+			display: none;
+	}
+
+	.left .mydesign {
+			display: none;
+	}
+
+	.left .clickdorp span {
+			display: none;
+	}
+
+	.left ul li .mydeopdown span {
+			display: none;
+			visibility: hidden;
+	}
+	.left ul li i{
+		font-size: 15px;
+		padding: 10px 0px;
+	}
+	.left ul li .fa-chevron-down{
+		font-size: 8px;
+		padding: 0px;
+	}
+	.right .top_bar .myham{
+		display: none;
+	}
 }
 
 
